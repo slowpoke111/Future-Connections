@@ -15,12 +15,16 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 100%; /* Ensures it fits on all screen sizes */
+            overflow-x: hidden;
         }
         h1 {
             margin-bottom: 20px;
             font-size: 2.5rem;
             color: #00FF00; /* Green text color */
+            text-align: center;
         }
         label, input, button {
             background-color: #003366; /* Dark blue */
@@ -30,6 +34,9 @@
             padding: 10px;
             font-size: 16px;
             margin: 10px;
+            width: 100%; /* Full width for mobile readability */
+            max-width: 400px;
+            box-sizing: border-box; /* Ensures padding doesn't overflow */
         }
         button {
             cursor: pointer;
@@ -42,10 +49,25 @@
         }
         #solution {
             margin-top: 20px;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #00FF00;
             text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow effect */
+            text-align: center;
+            width: 100%;
+            max-width: 400px; /* Restricts the width for better readability */
+            word-wrap: break-word; /* Prevents long text from overflowing */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            label, input, button {
+                font-size: 14px;
+            }
+            #solution {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
