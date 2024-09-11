@@ -6,3 +6,6 @@ This allows you to view future (and past) Connections. Written in Python and JS.
 
 Todo:
 - [x] Fix UI on mobile web.
+
+
+ [Future Wordles](slowpoke111.github.io/Future-Wordle/) 
